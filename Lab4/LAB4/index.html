@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Lab 4: Index</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+  </head>
+
+  <body>
+    <div class="header">
+
+        <h1>Computer Engineering Technology &#45 Computing Science</h1>
+		<h1>CST8238: Web Programming</h1>
+		
+    </div>
+    <div class="menu">
+      <h3><a href="\CST8238\Lab4\index.html">Index</a> &middot; <a href="\CST8238\Lab4\multimedia.html">Multimedia</a></h3>
+    </div>
+	
+    <div class="content">
+      <dl>
+        
+        <dt>
+          <h1>1. What are the different parts of a CSS style rule?</h1>
+        </dt>
+        
+        <dd>
+          <h2>There are two parts of a CSS style rule: the selector and the delcaration.
+              The selector is the HTML element you want to style, and the delcaration block
+              contains one or more delcarations separated by semicolons.</h2>
+        </dd>
+        
+        <dt>
+          <h1>2. What are an element selector and grouped element selector in CSS? Provide an example of each.</h1>
+        </dt>
+        
+        <dd>
+          <h2>The element selector is a pattern used to select the element you want to style. An example of
+              an element selector is:
+              </br>
+			  </br>
+              p{
+                </br>
+				</br>
+                   background-color: red;
+                </br>
+				</br>
+              }
+              </br>
+			  </br>
+              The grouped element selector in CSS are when several selectors shared the same
+              declarations; they can be grouped together to save writing the same rule more than once.
+              An example of an group element selector is:
+              </br>
+              </br>
+              h1, h2, h3, h4 {
+				</br>
+                </br>
+                font-size: 20px;
+                </br>
+				</br>
+              }
+          </h2>
+        </dd>
+        
+        <dt>
+          <h1>3. What are class selectors in CSS? What are id selectors in CSS?</h1>
+        </dt>
+        
+        <dd>
+          <h2>Class selectors and id selectors are a way to define your selectors.
+              In CSS, is identified by having a . before their name, while an
+              id selector would have a hash tag before their name. In CSS a class
+              selector would look like this:
+              </br>
+              </br>
+              #container{
+                </br>
+                </br>
+                padding: 10px;
+                </br>
+                </br>
+              }
+              </br>
+              </br>
+              and an id selector would look like this:
+              </br>
+              </br>
+              .footer{
+                </br>
+                </br>
+                width: 10px;
+                </br>
+                </br>
+              }
+          </h2>
+        </dd>
+        
+        <dt>
+          <h1>4. What are contextual selectors in CSS?</h1>
+        </dt>
+        
+        <dd>
+          <h2>The contextual selectors in the CSS allows you to specificy different styles for different
+              parts of your document. You can assign styles directly to specific HTML tags, or you can create
+              independent class and assign them to tags in the HTML.
+              </br>
+              </br>
+              table p {
+                </br>
+                </br>
+                property: value;
+                </br>
+                </br>
+              }
+          </h2>
+        </dd>
+        
+        <dt>
+          <h1>5. What are the three cascade principles used by browsers when style rules conflict?</h1>
+        </dt>
+        
+        <dd>
+          <h2>The three cascade principles used by browsers when style rules conflict is inheritence, cascasde and specificity.
+              </br>
+              </br>
+              Inheritence: Some styles are inherited down the HTML documentation tree, while others are not.
+              </br>
+              </br>
+              Specificity: CSS rules often conflict with one another. The trick is understanding how conlficting rules
+              will apply
+              </br>
+              </br>
+              Cascade: Style sheets are cascade by order of importance. If rules in different style sheets
+              conflict with one another, th rule from the most important style sheet wins.
+          </h2>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="footer">
+      <h5>&copy; Student Number: 040902920, Name: Aditya Dabhi, E-Mail: dabh0001@algonquinlive.com</h5>
+    </div>
+  </body>
+</html>

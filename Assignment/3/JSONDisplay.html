@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Assignment3 - Task 2</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+		
+function convertXMLtoJSON() {
+
+var book = [{
+	"author":"Gambardella Matthew",
+	"title":"XML Developer's Guide",
+	"genre":"Computer",
+	"price":"44.95",
+	"publish_date":"2000-10-01",
+	"description":"An in-depth look at creating applications with XML"
+},
+{
+	"author":"Ralls Kim",
+	"title":"Midnight Ascendent",
+	"genre":"Fantasy",
+	"price":"5.95",
+	"publish_date":"2000-12-16",
+	"description":"A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world"
+},
+{
+	"author":"Corets Eva",
+	"title":"Maeve Ascendent",
+	"genre":"Fantasy",
+	"price":"5.95",
+	"publish_date":"2000-11-17",
+	"description":"Afther the collapse of a nanotechnology society in England, the young survivors lay the foundation for a new society"
+},
+{
+	"author":"Corets Eva",
+	"title":"Oberons legacy",
+	"genre":"Fantasy",
+	"price":"5.95",
+	"publish_date":"2001-03-10",
+	"description":"In post-apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendent"
+},
+{
+	"author":"Corets Eva",
+	"title":"The Sundred Grail",
+	"genre":"Fantasy",
+	"price":"5.95",
+	"publish_date":"2001-09-10",
+	"description":"The two daughters of Maeve, half-sisters, battle one another for control of England. Sequel to Oberons Legacy"
+},
+{
+	"author":"Randall Cynthia",
+	"title":"Lover Birds",
+	"genre":"Romance",
+	"price":"4.95",
+	"publish_date":"2000-09-02",
+	"description":"When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled"
+},
+{
+	"author":"Thurman Paula",
+	"title":"Splish Splash",
+	"genre":"Romance",
+	"price":"4.95",
+	"publish_date":"2000-11-02",
+	"description":"A deep sea diver finds true love twenty thousand leagues beneath the sea"
+},
+{
+	"author":"Knorr Stefan",
+	"title":"Creepy Crawlies",
+	"genre":"Horror",
+	"price":"4.95",
+	"publish_date":"2000-12-06",
+	"description":"An anthology of horror stories about roaches, centipedes, scorpions, and other insects"
+},
+{
+	"author":"Kress Peter",
+	"title":"Paradox Lost",
+	"genre":"Science Fiction",
+	"price":"6.95",
+	"publish_date":"2000-11-02",
+	"description":"After an inadvertant trip through a Heisenberg Uncertainty Device, James Salway discovers the problems of being quantum"
+},
+{
+	"author":"O'Brien Tim",
+	"title":"Microsoft .NET: The programming Bible",
+	"genre":"Computer",
+	"price":"36.95",
+	"publish_date":"2000-12-09",
+	"description":"Microsoft's .NET initiative is explored in detail in this deep programmer's reference"
+},
+{
+	"author":"O'Brien Tim",
+	"title":"MSXML3: A Comprehensive Guide",
+	"genre":"Computer",
+	"price":"36.95",
+	"publish_date":"2000-12-01",
+	"description":"The Microsoft MSXML3 parser is covered in detail, with attention to XML DOM interfaces, XSLT processing, SAX and moree"
+},
+{
+	"author":"Galos Mike",
+	"title":"Visual Studio 7: A Comprehensive Guide",
+	"genre":"Computer",
+	"price":"49.95",
+	"publish_date":"2001-04-16",
+	"description":"Microsoft Visual Studio 7 is explored in depth, looking at how Visual Basic, Visual C++, C#, and ASP+ are integrated into comprehensive development environment."
+}
+];
+
+
+var i;
+	for(i=0; i<book.length; i++)
+	{
+		document.writeln(book[i].author);
+		document.writeln("<br>");
+		document.writeln(book[i].title);
+		document.writeln("<br>");
+		document.writeln(book[i].genre);
+		document.writeln("<br>");
+		document.writeln(book[i].price);
+		document.writeln("<br>");
+		document.writeln(book[i].publish_date);
+		document.writeln("<br>");
+		document.writeln(book[i].description);
+		document.writeln("<br>");
+		document.writeln("<br>");
+	}
+
+
+
+
+
+}		
+
+
+</script>
+</head>
+	
+
+<body>
+<h3>Assignment3-Task2 - Displaying JSON objects</h3>
+<table>
+<tbody>
+<tr>
+<td><input onclick="convertXMLtoJSON()" name="btnConvertJSON" id="btnConvertJSON" value="JSONDisplay!" type="button" /></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

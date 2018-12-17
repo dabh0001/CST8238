@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+#panel, #flip {
+    padding: 5x;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Assignment3 - Task1</title>
+	<meta charset="utf-8">
+	<script>
+	function convert() {
+		var option = prompt("Please enter a temparature unit:( 1:to convert into Celcius, 2:to convert into Farenhet.)");
+		
+		if (option == 1) {
+			do {
+				var faren = parseFloat(prompt("Please enter a temparature value to be converted to Celcius"));
+			} while (isNaN(faren));
+
+			var cel = (faren - 32) * 5 / 9;
+			alert(faren + "°F converted to celcius is " + cel + "°C");
+
+		} else if (option == 2) {
+			do {
+				var cel = parseFloat(prompt("Please enter a temparature value to be converted to Farenhet"));
+			} while (isNaN(cel));
+
+			var faren = cel * 9 / 5 + 32;
+			alert(cel + "°C converted to Farenhet is " + faren + "°F");
+
+		} else {
+			alert("Plase enter a valid number 1 or 2...");
+		}
+	}
+	
+	</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+</script>
+<script>
+$(document).ready(function(){
+		$("#flip").click(function(){
+			$("#panel").slideDown("slow");
+		});
+	});
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideUp("slow");
+    });
+});	
+
+</script>
+
+</head>
+	
+
+<body>
+<h3>Assignment3-Task1 - Temperature Conversion</h3>
+    <div id="flip">Temperature Conversion</div>
+    <div id="panel">This program converts from Celsius to Fahrenheit and vice versa</div>
+	
+    <table>      
+        	<tr>
+				<td>
+					<form>
+   
+					<input type="button" value="Convert" onclick="convert()";/>
+					</form>
+				</td>
+		    </tr>
+		
+</body>
+</html>

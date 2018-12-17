@@ -1,0 +1,95 @@
+body {
+  font-family: "Verdana";
+  font-size: 12px;
+	background: #CCCACB;
+	margin: auto;
+  padding: 0px;
+}
+
+h1, h2 {
+  text-align: justify;
+}
+h3 {
+	color: #3B6478;
+  text-align: justify;
+}
+
+h4 {
+	color: #EA6B60;
+  text-align: justify;
+}
+
+a, a:hover, a:active, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#paragraph{
+	padding: 15px;
+}
+
+.header{
+	position: relative;
+	background-color: #B2AF9E;
+	min-width: 250px;
+	max-width: 800px;
+	min-height: 100px;
+	max-height: 500px;
+	margin: auto;
+	padding: 20px;
+}
+
+.footer{
+	position: relative;
+	background-color: #B2AF9E;
+	text-align: center;
+	min-width: 250px;
+	max-width: 800px;
+	min-height: 20px;
+	margin: auto;
+	padding: 20px;
+}
+
+.menu{
+	position: relative;
+	background-color: #93A49A;
+	height: 20px;
+	margin-top: -50px;
+	margin-left: auto;
+  margin-right: 22.5%;
+	float: right;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 25px;
+}
+
+.content{
+	position: relative;
+	background: white;
+	margin: auto;
+	min-width: 250px;
+	max-width: 800px;
+	top: auto;
+	bottom: 0px;
+	padding: 20px;
+
+}
+
+.table{
+  display:table;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+}
+
+.row{
+  display:table-row;
+  height: 90%;
+}
+
+.cell1, .cell2, .cell3 {
+  display:table-cell;
+  width: 90%;
+  height:90%;
+}
